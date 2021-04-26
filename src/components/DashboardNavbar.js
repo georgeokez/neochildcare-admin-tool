@@ -12,6 +12,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
+import Tooltip from '@material-ui/core/Tooltip';
 import Logo from './Logo';
 
 const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
@@ -37,15 +38,20 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <IconButton color="inherit">
-            <InputIcon />
-          </IconButton>
+          <Tooltip title="Logout" arrow>
+            <IconButton color="inherit" aria-label="Logout">
+              <RouterLink to="/login" style={{color: 'white'}}>
+                <InputIcon />
+              </RouterLink>
+            </IconButton>
+          </Tooltip>
         </Hidden>
         <Hidden lgUp>
           <IconButton
             color="inherit"
             onClick={onMobileNavOpen}
           >
+
             <MenuIcon />
           </IconButton>
         </Hidden>
