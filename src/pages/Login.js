@@ -2,6 +2,9 @@ import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import {
   Box,
   Button,
@@ -11,31 +14,66 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import FacebookIcon from 'src/icons/Facebook';
 import GoogleIcon from 'src/icons/Google';
+import Avatar from '@material-ui/core/Avatar';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+
+const Copyright = () => (
+  <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="primary" href="https://www.neochildcare.com/">
+        neochildcare
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+);
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+        marginTop: theme.spacing(8),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      },
+      avatar: {
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.primary.main,
+        fontSize: 100
+      },
+      form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+      },
+      submit: {
+        margin: theme.spacing(3, 0, 2),
+      },
+    }));
 
 const Login = () => {
   const navigate = useNavigate();
+  const classes = useStyles();
 
   return (
     <>
       <Helmet>
-        <title>Login | Material Kit</title>
+        <title>NeoChildCare Admin Login</title>
       </Helmet>
       <Box
         sx={{
           backgroundColor: 'background.default',
           display: 'flex',
           flexDirection: 'column',
-          height: '100%',
-          justifyContent: 'center'
+          height: '100%'
         }}
       >
-        <Container maxWidth="sm">
+        <Container maxWidth="xs">
           <Formik
             initialValues={{
-              email: 'demo@devias.io',
-              password: 'Password123'
+              email: '',
+              password: ''
             }}
             validationSchema={Yup.object().shape({
               email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
@@ -55,69 +93,16 @@ const Login = () => {
               values
             }) => (
               <form onSubmit={handleSubmit}>
-                <Box sx={{ mb: 3 }}>
+                <Box sx={{ mb: 3 }} className={classes.paper}>
+                  <Avatar className={classes.avatar }>
+                    <AccountCircleIcon fontSize="large" style={{ fontSize: 40 }} />
+                  </Avatar>
                   <Typography
                     color="textPrimary"
+                    component="h1"
                     variant="h2"
                   >
                     Sign in
-                  </Typography>
-                  <Typography
-                    color="textSecondary"
-                    gutterBottom
-                    variant="body2"
-                  >
-                    Sign in on the internal platform
-                  </Typography>
-                </Box>
-                <Grid
-                  container
-                  spacing={3}
-                >
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      color="primary"
-                      fullWidth
-                      startIcon={<FacebookIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Facebook
-                    </Button>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      fullWidth
-                      startIcon={<GoogleIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Google
-                    </Button>
-                  </Grid>
-                </Grid>
-                <Box
-                  sx={{
-                    pb: 1,
-                    pt: 3
-                  }}
-                >
-                  <Typography
-                    align="center"
-                    color="textSecondary"
-                    variant="body1"
-                  >
-                    or login with email address
                   </Typography>
                 </Box>
                 <TextField
@@ -146,6 +131,10 @@ const Login = () => {
                   value={values.password}
                   variant="outlined"
                 />
+                <FormControlLabel
+                  control={<Checkbox value="remember" color="primary" />}
+                  label="Remember me"
+                />
                 <Box sx={{ py: 2 }}>
                   <Button
                     color="primary"
@@ -155,9 +144,10 @@ const Login = () => {
                     type="submit"
                     variant="contained"
                   >
-                    Sign in now
+                    Sign in
                   </Button>
                 </Box>
+                
                 <Typography
                   color="textSecondary"
                   variant="body1"
@@ -169,12 +159,15 @@ const Login = () => {
                     to="/register"
                     variant="h6"
                   >
-                    Sign up
+                    Sign Up
                   </Link>
                 </Typography>
               </form>
             )}
           </Formik>
+          <Box mt={8}>
+            <Copyright />
+          </Box>
         </Container>
       </Box>
     </>
