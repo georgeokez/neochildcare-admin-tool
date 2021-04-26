@@ -107,7 +107,7 @@ const Register = () => {
                     component="h1"
                     variant="h2"
                   >
-                    Sign in
+                    Sign Up
                   </Typography>
                 </Box>
                 <TextField
