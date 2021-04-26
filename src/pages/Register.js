@@ -85,7 +85,7 @@ const Register = () => {
               })
             }
             onSubmit={() => {
-              navigate('/app/dashboard', { replace: true });
+              navigate('/login', { replace: true });
             }}
           >
             {({
@@ -107,7 +107,7 @@ const Register = () => {
                     component="h1"
                     variant="h2"
                   >
-                    Sign Up
+                    Sign up
                   </Typography>
                 </Box>
                 <TextField
