@@ -30,6 +30,7 @@ const routes = [
     element: <MainLayout />,
     children: [
       { path: '/', element: <Login /> },
+      { path: '/login', element: <Login /> },
       { path: 'register', element: <Register /> },
       { path: '404', element: <NotFound /> },
       { path: 'dashboard', element: <Navigate to="/app/dashboard" /> },

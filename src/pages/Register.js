@@ -2,6 +2,7 @@ import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import {
   Box,
   Button,
@@ -12,25 +13,60 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+
+const Copyright = () => (
+  <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="primary" href="https://www.neochildcare.com/">
+        neochildcare
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+);
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+        marginTop: theme.spacing(8),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      },
+      avatar: {
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.primary.main,
+        fontSize: 100
+      },
+      form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+      },
+      submit: {
+        margin: theme.spacing(3, 0, 2),
+      },
+    }));
 
 const Register = () => {
   const navigate = useNavigate();
+  const classes = useStyles();
 
   return (
     <>
       <Helmet>
-        <title>Register | Material Kit</title>
+        <title>NeoChildCare Admin Login</title>
       </Helmet>
       <Box
         sx={{
           backgroundColor: 'background.default',
           display: 'flex',
           flexDirection: 'column',
-          height: '100%',
-          justifyContent: 'center'
+          height: '100%'
         }}
       >
-        <Container maxWidth="sm">
+        <Container maxWidth="xs">
           <Formik
             initialValues={{
               email: '',
@@ -62,19 +98,16 @@ const Register = () => {
               values
             }) => (
               <form onSubmit={handleSubmit}>
-                <Box sx={{ mb: 3 }}>
+                <Box sx={{ mb: 3 }} className={classes.paper}>
+                  <Avatar className={classes.avatar }>
+                    <AccountCircleIcon fontSize="large" style={{ fontSize: 40 }} />
+                  </Avatar>
                   <Typography
                     color="textPrimary"
+                    component="h1"
                     variant="h2"
                   >
-                    Create new account
-                  </Typography>
-                  <Typography
-                    color="textSecondary"
-                    gutterBottom
-                    variant="body2"
-                  >
-                    Use your email to create new account
+                    Sign in
                   </Typography>
                 </Box>
                 <TextField
