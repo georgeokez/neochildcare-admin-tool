@@ -223,6 +223,9 @@ const Register = () => {
               </form>
             )}
           </Formik>
+          <Box mt={8}>
+            <Copyright />
+          </Box>
         </Container>
       </Box>
     </>
