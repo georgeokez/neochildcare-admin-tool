@@ -3,8 +3,6 @@ import DataGridTable from 'src/components/samples/DataGridTable';
 
 const DoctorListResults = ({doctors}) => {
 
-
-
 const columns= [
   { field: 'id', headerName: 'ID', width: 75 },
   { field: 'firstname', headerName: 'First name', width: 140 },

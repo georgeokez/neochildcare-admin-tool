@@ -4,22 +4,22 @@ import { Box, Container } from '@material-ui/core';
 import DoctorListResults from 'src/components/doctor/DoctorListResults';
 import DoctorListToolbar from 'src/components/doctor/DoctorListToolbar';
 import FixedHeaderTable from 'src/components/samples/FixedHeaderTable';
-//import doctors from 'src/__mocks__/doctors';
+import doctors from 'src/__mocks__/doctors';
 
 const DoctorList = () => {
 
 const URL = "http://localhost:8080/api/v1/doctors";
 
-const [doctors, setDoctors] = useState([]);
+//const [doctors, setDoctors] = useState([]);
 
-useEffect(() => {
-    fetch(URL)
-    .then(response => response.json()
-    .then(data => {
-      setDoctors(data)
-    })
-    )
-  },[])
+// useEffect(() => {
+//     fetch(URL)
+//     .then(response => response.json()
+//     .then(data => {
+//       setDoctors(data)
+//     })
+//     )
+//   },[])
 
 return (
     <>
