@@ -84,5 +84,29 @@ export default [
     updatedAt: new Date(),
     profession: 'Medical Doctor',
     daysAvailable: '[Mondays, Tuesdays, Wednesday]'
+  },
+  {
+    id: 9,
+    firstname: 'Yusuf',
+    lastname: 'Shittu',
+    email: 'yusuf.shittu@gamil.com',
+    username: 'yusuf_shittu',
+    phone: '08045532264',
+    createdAt: new Date("2021-04-11T12:15:00"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Mondays, Thursday, Wednesday]'
+  },
+  {
+    id: 10,
+    firstname: 'Nimah',
+    lastname: 'Shittu',
+    email: 'Nimah.shittu@gamil.com',
+    username: 'Nimah_shittu',
+    phone: '08177733082',
+    createdAt: new Date("2021-04-15T16:00:00"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Tuesday, Thursday, Wednesday]'
   }
 ];
