@@ -1,5 +1,5 @@
 import React from 'react'
-import DataGridTable from 'src/components/samples/DataGridTable';
+import DataGridTable from 'src/components/units/DataGridTable';
 
 const DoctorListResults = ({doctors}) => {
 

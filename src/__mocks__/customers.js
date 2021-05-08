@@ -2,143 +2,111 @@ import { v4 as uuid } from 'uuid';
 
 export default [
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'West Virginia',
-      city: 'Parkersburg',
-      street: '2849 Fulton Street'
-    },
-    avatarUrl: '/static/images/avatars/avatar_3.png',
-    createdAt: 1555016400000,
-    email: 'ekaterina.tankova@devias.io',
-    name: 'Ekaterina Tankova',
-    phone: '304-428-3097'
+    id: 1,
+    firstname: 'Tosin',
+    lastname: 'OluwaTimi',
+    email: 'tosin.oluwatimi@gmail.com',
+    username: 'tosin_oluwatimi',
+    phone: '08147385920',
+    createdAt: new Date("2021-04-10"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Tuesdays, Wednesdays, Thursdays]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Bristow',
-      city: 'Iowa',
-      street: '1865  Pleasant Hill Road'
-    },
-    avatarUrl: '/static/images/avatars/avatar_4.png',
-    createdAt: 1555016400000,
-    email: 'cao.yu@devias.io',
-    name: 'Cao Yu',
-    phone: '712-351-5711'
+    id: 2,
+    firstname: 'Ade',
+    lastname: 'Opeyimipo',
+    email: 'ade.opeyemipo@gmail.com',
+    username: 'ade_opeyemipo',
+    phone: '08141394403',
+    createdAt: new Date("2021-04-12T13:00:00"),
+    updatedAt: new Date(),
+    profession: 'Pediatrician',
+    daysAvailable: '[Mondays, Wednesdays, Fridays]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Georgia',
-      city: 'Atlanta',
-      street: '4894  Lakeland Park Drive'
-    },
-    avatarUrl: '/static/images/avatars/avatar_2.png',
-    createdAt: 1555016400000,
-    email: 'alexa.richardson@devias.io',
-    name: 'Alexa Richardson',
-    phone: '770-635-2682'
+    id: 3,
+    firstname: 'Chuks',
+    lastname: 'Okoye',
+    email: 'chuks.okoye@yahoo.com',
+    username: 'chuks_okoye',
+    phone: '080149850482',
+    createdAt: new Date("2021-03-25T10:15:00"),
+    updatedAt: new Date(),
+    profession: 'Therapist',
+    daysAvailable: '[Mondays, Tuesdays]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Ohio',
-      city: 'Dover',
-      street: '4158  Hedge Street'
-    },
-    avatarUrl: '/static/images/avatars/avatar_5.png',
-    createdAt: 1554930000000,
-    email: 'anje.keizer@devias.io',
-    name: 'Anje Keizer',
-    phone: '908-691-3242'
+    id: 4,
+    firstname: 'Musa',
+    lastname: 'Adamu',
+    email: 'musa.adamu@yahoo.com',
+    username: 'musa_adamu',
+    phone: '080149850482',
+    createdAt: new Date("2021-03-20T09:35:00"),
+    updatedAt: new Date(),
+    profession: 'Psychologist',
+    daysAvailable: '[Mondays, Tuesdays, Wednesday, Thursday]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Texas',
-      city: 'Dallas',
-      street: '75247'
-    },
-    avatarUrl: '/static/images/avatars/avatar_6.png',
-    createdAt: 1554757200000,
-    email: 'clarke.gillebert@devias.io',
-    name: 'Clarke Gillebert',
-    phone: '972-333-4106'
+    id: 5,
+    firstname: 'Tega',
+    lastname: 'Okez',
+    email: 'tega.okez@gamil.com',
+    username: 'tega_okez',
+    phone: '08083339812',
+    createdAt: new Date("2021-04-16T13:45:00"),
+    updatedAt: new Date(),
+    profession: 'Nutritionist',
+    daysAvailable: '[Mondays, Tuesdays, Wednesday]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'California',
-      city: 'Bakerfield',
-      street: '317 Angus Road'
-    },
-    avatarUrl: '/static/images/avatars/avatar_1.png',
-    createdAt: 1554670800000,
-    email: 'adam.denisov@devias.io',
-    name: 'Adam Denisov',
-    phone: '858-602-3409'
+    id: 6,
+    firstname: 'Timi',
+    lastname: 'Omotosho',
+    email: 'timi.omotosho@gamil.com',
+    username: 'timi_omotosho',
+    phone: '08082219812',
+    createdAt: new Date("2021-04-18T16:00:00"),
+    updatedAt: new Date(),
+    profession: 'Psychologist',
+    daysAvailable: '[Tuesdays, Wednesday]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'California',
-      city: 'Redondo Beach',
-      street: '2188  Armbrester Drive'
-    },
-    avatarUrl: '/static/images/avatars/avatar_7.png',
-    createdAt: 1554325200000,
-    email: 'ava.gregoraci@devias.io',
-    name: 'Ava Gregoraci',
-    phone: '415-907-2647'
+    id: 7,
+    firstname: 'George',
+    lastname: 'Stan',
+    email: 'georgestan@gamil.com',
+    username: 'george_stan',
+    phone: '08134362783',
+    createdAt: new Date("2021-04-06T11:45:00"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Mondays, Tuesdays, Wednesday]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Nevada',
-      city: 'Las Vegas',
-      street: '1798  Hickory Ridge Drive'
-    },
-    avatarUrl: '/static/images/avatars/avatar_8.png',
-    createdAt: 1523048400000,
-    email: 'emilee.simchenko@devias.io',
-    name: 'Emilee Simchenko',
-    phone: '702-661-1654'
+    id: 9,
+    firstname: 'Yusuf',
+    lastname: 'Shittu',
+    email: 'yusuf.shittu@gamil.com',
+    username: 'yusuf_shittu',
+    phone: '08045532264',
+    createdAt: new Date("2021-04-11T12:15:00"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Mondays, Thursday, Wednesday]'
   },
   {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Michigan',
-      city: 'Detroit',
-      street: '3934  Wildrose Lane'
-    },
-    avatarUrl: '/static/images/avatars/avatar_9.png',
-    createdAt: 1554702800000,
-    email: 'kwak.seong.min@devias.io',
-    name: 'Kwak Seong-Min',
-    phone: '313-812-8947'
-  },
-  {
-    id: uuid(),
-    address: {
-      country: 'USA',
-      state: 'Utah',
-      city: 'Salt Lake City',
-      street: '368 Lamberts Branch Road'
-    },
-    avatarUrl: '/static/images/avatars/avatar_10.png',
-    createdAt: 1522702800000,
-    email: 'merrile.burgett@devias.io',
-    name: 'Merrile Burgett',
-    phone: '801-301-7894'
+    id: 10,
+    firstname: 'Nimah',
+    lastname: 'Shittu',
+    email: 'Nimah.shittu@gamil.com',
+    username: 'Nimah_shittu',
+    phone: '08177733082',
+    createdAt: new Date("2021-04-15T16:00:00"),
+    updatedAt: new Date(),
+    profession: 'Medical Doctor',
+    daysAvailable: '[Tuesday, Thursday, Wednesday]'
   }
 ];

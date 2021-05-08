@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Box, Container } from '@material-ui/core';
 import DoctorListResults from 'src/components/doctor/DoctorListResults';
 import DoctorListToolbar from 'src/components/doctor/DoctorListToolbar';
-import FixedHeaderTable from 'src/components/samples/FixedHeaderTable';
 import doctors from 'src/__mocks__/doctors';
 
 const DoctorList = () => {
