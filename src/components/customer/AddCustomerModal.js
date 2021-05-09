@@ -8,6 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 
+
 const useStyles = makeStyles((theme) => ({
   form: {
     display: 'flex',
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AddDoctorModal = ({status}) => {
+const AddCustomerModal = ({status}) => {
   const [open, setOpen] = useState(status);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxWidth] = useState('md');
@@ -37,8 +38,8 @@ const AddDoctorModal = ({status}) => {
     setOpen(false);
   };
 
-  const handleAddDoctor = (doctor) =>{
-
+  const handleAddCustomer = (doctor) =>{
+    // Write function later
   }
 
   const handleMaxWidthChange = (event) => {
@@ -52,7 +53,7 @@ const AddDoctorModal = ({status}) => {
   return (
     <React.Fragment>
       <Button variant="contained" color="primary" onClick={handleClickOpen}>
-        Add Doctor
+        Add Customer
       </Button>
       <Dialog
         fullWidth={fullWidth}
@@ -63,7 +64,7 @@ const AddDoctorModal = ({status}) => {
       >
 
         <DialogTitle id="confirmation-dialog-title" >
-          Add New Doctor
+          Add New Customer
         </DialogTitle>
         <DialogContent >
           <Grid container spacing={3}>
@@ -97,29 +98,7 @@ const AddDoctorModal = ({status}) => {
             autoComplete="email"
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            id="phone"
-            name="phone"
-            label="Phone Number"
-            fullWidth
-            autoComplete="Phone"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="profession"
-            name="profession"
-            label="Profession"
-            fullWidth
-            autoComplete="profession"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField id="days_available" name="days_available" label="Days Available" fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12}  sm={6}>
           <TextField
             required
             id="city"
@@ -129,7 +108,7 @@ const AddDoctorModal = ({status}) => {
             autoComplete="City"
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12}  sm={6}>
           <TextField
             required
             id="country"
@@ -145,7 +124,7 @@ const AddDoctorModal = ({status}) => {
           <Button onClick={handleClose} color="primary">
             Close
           </Button>
-          <Button onClick={handleAddDoctor} color="primary" 
+          <Button onClick={handleAddCustomer} color="primary" 
                     size="medium"
                     type="submit"
                     variant="contained">
@@ -157,4 +136,4 @@ const AddDoctorModal = ({status}) => {
   );
 }
 
-export default AddDoctorModal;
+export default AddCustomerModal;

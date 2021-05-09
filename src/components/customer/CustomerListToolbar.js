@@ -2,7 +2,7 @@ import {
   Box,
   Button
 } from '@material-ui/core';
-import { Search as SearchIcon } from 'react-feather';
+import AddCustomerModal from './AddCustomerModal';
 
 const CustomerListToolbar = (props) => (
   <Box {...props}>
@@ -18,12 +18,7 @@ const CustomerListToolbar = (props) => (
       <Button sx={{ mx: 1 }}>
         Export
       </Button>
-      <Button
-        color="primary"
-        variant="contained"
-      >
-        Add customer
-      </Button>
+      <AddCustomerModal />
     </Box>
   </Box>
 );
