@@ -20,6 +20,7 @@ const CustomerListToolbar = (props) => (
       </Button>
       <AddCustomerModal />
     </Box>
+    
   </Box>
 );
 
