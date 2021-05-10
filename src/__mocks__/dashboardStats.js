@@ -6,6 +6,6 @@ export default [
         noOfVirturalConsultations: 36,
         noOfVirturalChecks: 24,
         noOfVaccineToDoor: 15,
-        noOfProducts: 3,
+        noOfProducts: 4,
     }
 ]
