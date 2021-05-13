@@ -2,15 +2,19 @@
 const export VirtualWellnessChecks = [
     {
         product_id: 1,
-        name: "virtual wellness checks"
-        data: []
+        name: "virtual wellness checks",
+        data: [
+            {
+                id:1,
+            }
+        ]
     }
 ]
 
 const export VirtualConsultations= [
     {
         product_id: 2,
-        name: "virtual consulattion"
+        name: "virtual consulattion",
         data: []
     }
 ]
@@ -18,7 +22,7 @@ const export VirtualConsultations= [
 const export VaccinceToDoor = [
     {
         product_id: 3,
-        name: "vaccine to your door step"
+        name: "vaccine to your door step",
         data: []
     }
 ]
