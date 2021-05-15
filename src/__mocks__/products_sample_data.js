@@ -5,7 +5,6 @@ const export VirtualWellnessChecks = [
         name: "virtual wellness checks",
         data: [
             {
-                id:1,
             }
         ]
     }
