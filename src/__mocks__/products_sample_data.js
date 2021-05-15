@@ -3,10 +3,7 @@ const export VirtualWellnessChecks = [
     {
         product_id: 1,
         name: "virtual wellness checks",
-        data: [
-            {
-            }
-        ]
+        data: []
     }
 ]
 
