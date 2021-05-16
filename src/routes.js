@@ -10,6 +10,8 @@ import NotFound from 'src/pages/NotFound';
 import ProductList from 'src/pages/ProductList';
 import Register from 'src/pages/Register';
 import Settings from 'src/pages/Settings';
+import VirtualWellnessChecks from 'src/components/product/VirtualWellnessChecks';
+import VitrualConsultation from 'src/components/product/VitrualConsultation';
 
 const routes = [
   {
@@ -20,7 +22,11 @@ const routes = [
       { path: 'customers', element: <CustomerList /> },
       { path: 'doctors', element: <DoctorList /> },
       { path: 'dashboard', element: <Dashboard /> },
-      { path: 'products', element: <ProductList /> },
+      { path: 'products', element: <ProductList /> ,
+      children: [
+        { path: 'virtual-wellness-check', element: <VirtualWellnessChecks /> },
+        { path: 'virtual-consultation', element: <VitrualConsultation /> }
+      ]},
       { path: 'settings', element: <Settings /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
