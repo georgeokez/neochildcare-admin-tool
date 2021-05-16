@@ -6,7 +6,7 @@ const export VirtualWellnessChecks = [
         data: []
     }
 ]
-
+ 
 const export VirtualConsultations= [
     {
         product_id: 2,

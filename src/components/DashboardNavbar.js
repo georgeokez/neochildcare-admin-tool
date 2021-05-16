@@ -11,6 +11,8 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import MailIcon from '@material-ui/icons/Mail';
 import InputIcon from '@material-ui/icons/Input';
 import Tooltip from '@material-ui/core/Tooltip';
 import Logo from './Logo';
