@@ -18,7 +18,7 @@ const ProductListToolbar = (props) => (
       }}
     >
       {/* ToDo */}
-      <Button>
+      {/* <Button>
         Import
       </Button>
       <Button sx={{ mx: 1 }}>
@@ -29,7 +29,7 @@ const ProductListToolbar = (props) => (
         variant="contained"
       >
         Add product
-      </Button>
+      </Button> */}
     </Box>
     <Box sx={{ mt: 3 }}>
       <Card>
