@@ -18,18 +18,7 @@ const ProductListToolbar = (props) => (
       }}
     >
       {/* ToDo */}
-      {/* <Button>
-        Import
-      </Button>
-      <Button sx={{ mx: 1 }}>
-        Export
-      </Button>
-      <Button
-        color="primary"
-        variant="contained"
-      >
-        Add product
-      </Button> */}
+      
     </Box>
     <Box sx={{ mt: 3 }}>
       <Card>
